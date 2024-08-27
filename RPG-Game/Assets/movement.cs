@@ -5,12 +5,12 @@ using UnityEngine.UI;
 public class movement : MonoBehaviour
 {
     private Rigidbody2D rb;
-    public float speed = 100f; // player speed
-    public float sprint = 200f; // player sprint speed
-    public float stamina = 100f; // Current stamina
-    public float maxStamina = 100f; // Maximum stamina
-    public float staminaRegen = 5f; // Stamina regeneration rate per second
-    public float staminaCostPerSecond = 15f; // Stamina cost per second while sprinting
+    [SerializeField] public float speed = 100f; // player speed
+    [SerializeField] public float sprint = 200f; // player sprint speed
+    [SerializeField] public float stamina = 100f; // Current stamina
+    [SerializeField] public float maxStamina = 100f; // Maximum stamina
+    [SerializeField] public float staminaRegen = 5f; // Stamina regeneration rate per second
+    [SerializeField]public float  staminaCostPerSecond = 20f; // Stamina cost per second while sprinting
 
     private Coroutine regenCoroutine;
     public Slider staminaBar;
